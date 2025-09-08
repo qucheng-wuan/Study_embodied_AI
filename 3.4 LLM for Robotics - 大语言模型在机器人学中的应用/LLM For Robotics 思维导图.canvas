@@ -1,0 +1,34 @@
+{
+	"nodes":[
+		{"id":"05a3a3b40f73171c","x":-570,"y":225,"width":250,"height":60,"type":"text","text":"solve Planning: chain of thought"},
+		{"id":"f33c66364a035220","x":-65,"y":232,"width":165,"height":60,"type":"text","text":"如何判断正确性"},
+		{"id":"f2290cfa7a6779cc","x":-830,"y":-328,"width":180,"height":60,"type":"text","text":"LLM For Robotics"},
+		{"id":"2c57bfe187624660","x":-505,"y":-320,"width":120,"height":60,"type":"text","text":"Question"},
+		{"id":"7416b3a7e9c2419c","x":-300,"y":-438,"width":200,"height":110,"type":"text","text":"Grounding:如何把自然语言转换成能够被机器人识别、处理的**状态**？"},
+		{"id":"80eb8e709337f4c1","x":-25,"y":-460,"width":250,"height":154,"type":"text","text":"![[Pasted image 20250908110707.png]]\n"},
+		{"id":"1c3bd96538064ae7","x":-300,"y":-200,"width":200,"height":80,"type":"text","text":"Planning:如何**规划**合适的动作来完成任务？"},
+		{"id":"b42f5fe615526f20","x":-25,"y":-237,"width":250,"height":154,"type":"text","text":"![[Pasted image 20250908110737.png]]\n"},
+		{"id":"4649e3de00d7bde1","x":-800,"y":103,"width":120,"height":60,"type":"text","text":"Solution"},
+		{"id":"c744bf1ff79e5399","x":-600,"y":0,"width":250,"height":60,"type":"text","text":"solve Grounding ：LLM内在知识"},
+		{"id":"30db01767232db59","x":-260,"y":103,"width":120,"height":60,"type":"text","text":"Problem"},
+		{"id":"862e06235f113229","x":-65,"y":0,"width":224,"height":60,"type":"text","text":"Problem1:如何处理失败"},
+		{"id":"0ea9d2dae22b0ff9","x":240,"y":-56,"width":250,"height":173,"type":"text","text":"![[Pasted image 20250908111317.png]]\n闭环反馈系统"},
+		{"id":"c0be94d6b00e571f","x":179,"y":163,"width":250,"height":217,"type":"text","text":"![[Pasted image 20250908111405.png]]\n迭代生成代码"}
+	],
+	"edges":[
+		{"id":"241d75b6a765265f","fromNode":"f2290cfa7a6779cc","fromSide":"right","toNode":"2c57bfe187624660","toSide":"left"},
+		{"id":"01c123633e920b5a","fromNode":"2c57bfe187624660","fromSide":"right","toNode":"7416b3a7e9c2419c","toSide":"left"},
+		{"id":"be643f4c8435a7e5","fromNode":"2c57bfe187624660","fromSide":"right","toNode":"1c3bd96538064ae7","toSide":"left"},
+		{"id":"6a8014913aeec8db","fromNode":"7416b3a7e9c2419c","fromSide":"right","toNode":"80eb8e709337f4c1","toSide":"left"},
+		{"id":"2d494706633a7eed","fromNode":"1c3bd96538064ae7","fromSide":"right","toNode":"b42f5fe615526f20","toSide":"left"},
+		{"id":"6ea5a19de64b3900","fromNode":"f2290cfa7a6779cc","fromSide":"bottom","toNode":"4649e3de00d7bde1","toSide":"top"},
+		{"id":"7738f004c63b9301","fromNode":"4649e3de00d7bde1","fromSide":"right","toNode":"c744bf1ff79e5399","toSide":"left"},
+		{"id":"284dd6d8bf63de15","fromNode":"4649e3de00d7bde1","fromSide":"right","toNode":"05a3a3b40f73171c","toSide":"left"},
+		{"id":"7fb3461fea303665","fromNode":"c744bf1ff79e5399","fromSide":"right","toNode":"30db01767232db59","toSide":"left"},
+		{"id":"83f1d3d69f341eef","fromNode":"05a3a3b40f73171c","fromSide":"right","toNode":"30db01767232db59","toSide":"left"},
+		{"id":"ef88308dc4e36a70","fromNode":"30db01767232db59","fromSide":"right","toNode":"862e06235f113229","toSide":"left"},
+		{"id":"2b6e6e3705f3d13a","fromNode":"30db01767232db59","fromSide":"right","toNode":"f33c66364a035220","toSide":"left"},
+		{"id":"14408f60e8794449","fromNode":"862e06235f113229","fromSide":"right","toNode":"0ea9d2dae22b0ff9","toSide":"left"},
+		{"id":"7a117c7d3889e924","fromNode":"f33c66364a035220","fromSide":"right","toNode":"c0be94d6b00e571f","toSide":"left"}
+	]
+}
